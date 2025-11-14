@@ -213,14 +213,14 @@
 
 /* SECCIÓN POSTULACIÓN */
 .seccion-postula {
-  background-color: rgb(40, 179, 40);
+  background-color: skyblue;
   padding: 3.75rem 1.25rem;
 }
 
 .contenedor-postula {
-  background-color: rgb(168, 229, 178);
+  background-color: rgb(95, 224, 207);
   padding: 1.875rem;
-  border: 2px solid rgb(27, 88, 30);
+  border: 2px solid rgb(27, 64, 88);
   border-radius: 0.625rem;
   width: 100%;
   max-width: 37.5rem;
