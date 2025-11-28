@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SistemCont</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <!-- HEADER FIJO CON MENÚ Y SUBMENÚ -->
+    <nav class="topheader" aria-label="Principal">
+      <!-- BOTÓN HAMBURGUESA -->
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+
+        <!-- Ícono de hamburguesa -->
+      </button>
+      <a href="#" class="logo">
+        <img src="Img/aa.jpg" alt="SistemCont" />
+      </a>
+
+      <ul class="menu-horizontal">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li class="has-sub">
+          <a href="#">Servicios</a>
+          <ul class="submenu-servicios">
+            <li><a href="#">Servicio A</a></li>
+            <li><a href="#">Servicio B</a></li>
+            <li><a href="#">Servicio C</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Postula</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN INICIO -->
+    <section class="seccion-inicio">
+      <div class="contenedor">
+        <div class="inicio-col texto">
+          <h4 class="subtitulo">¡Haz que tus números trabajen por ti!</h4>
+
+          <h1 class="hero-title">
+            TE AYUDAMOS<br />
+            A <span class="marker">CRECER</span> CON<br />
+            SEGURIDAD Y<br />
+            <span class="marker">CONFIANZA</span>
+          </h1>
+
+          <p>
+            Constituimos tu empresa, gestionamos tu contabilidad y te asesoramos
+            legalmente, ofreciéndote un servicio integral con capacitaciones y
+            espacios de coworking.
+          </p>
+        </div>
+
+        <div class="inicio-col imagen">
+          <img src="Img/111.jpg" alt="Presentación SistemCont" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section class="seccion-nosotros">
+      <div class="contenedor contenedor-nosotros">
+        <div class="nosotros-texto">
+          <h2>Sobre Nosotros</h2>
+          <p class="resumen">
+            Somos un equipo contable con más de 8 años ayudando a mypes y pymes
+            a ordenar su información financiera, cumplir con Sunat y tomar
+            decisiones con datos claros y oportunos.
+          </p>
+
+          <!-- LISTA DE VIÑETAS QUE EXPLICA VALORES Y ENFOQUE -->
+          <ul class="lista-valores">
+            <li>Transparencia en cada entrega.</li>
+            <li>Cumplimiento tributario sin sorpresas.</li>
+            <li>Acompañamiento mensual y reportes claros.</li>
+          </ul>
+        </div>
+
+        <div class="nosotros-video">
+          <iframe
+            src="https://www.youtube.com/embed/sr06yQCW8CY"
+            title="Video institucional"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="seccion-servicios">
+      <div class="contenedor-servicios">
+        <!-- BLOQUE DE TÍTULO CENTRADO -->
+        <div class="servicios-header">
+          <h2>Servicios Contables</h2>
+          <p>Soluciones precisas para el éxito de tu empresa</p>
+        </div>
+
+        <!-- BLOQUE DE CUADRÍCULA DE SERVICIOS -->
+        <div class="cuadricula-servicios">
+          <div class="servicio">
+            <h3>Constitución de empresas</h3>
+            <p>Formalizamos tu negocio desde la inscripción hasta el RUC.</p>
+          </div>
+
+          <div class="servicio">
+            <h3>Contabilidad financiera</h3>
+            <p>Registramos y organizamos todas tus operaciones contables.</p>
+          </div>
+
+          <div class="servicio">
+            <h3>Declaraciones tributarias</h3>
+            <p>Preparamos y presentamos tus impuestos ante Sunat.</p>
+          </div>
+
+          <div class="servicio">
+            <h3>Planillas y gestión laboral</h3>
+            <p>Calculamos sueldos, beneficios y aportes de tus trabajadores.</p>
+          </div>
+
+          <div class="servicio">
+            <h3>Asesoría legal empresarial</h3>
+            <p>Te apoyamos en contratos, estatutos y normativas.</p>
+          </div>
+
+          <div class="servicio">
+            <h3>Capacitación y consultoría</h3>
+            <p>Brindamos talleres prácticos en finanzas y gestión.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION POSTULACIÓN-->
+    <section class="seccion-postula">
+      <div class="contenedor-postula">
+        <div class="postula-texto">
+          <h2>Postula a nuestro equipo</h2>
+
+          <form class="formulario">
+            <!-- NOMBRE -->
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresa tu nombre"
+              />
+            </div>
+
+            <!-- PUESTO -->
+            <div class="campo">
+              <label for="puesto">Puesto</label>
+              <select id="puesto" name="puesto">
+                <option value="">Seleccione puesto</option>
+                <option value="asistente-contable">Asistente contable</option>
+                <option value="auditor">Auditor</option>
+                <option value="contador-general">Contador general</option>
+                <option value="secretaria">Secretaria</option>
+              </select>
+            </div>
+
+            <!-- CHECKBOX -->
+            <div class="campo">
+              <label>Intereses</label>
+              <ul class="lista-checkbox">
+                <li>
+                  <label
+                    ><input type="checkbox" name="intereses" value="dormir" />
+                    Dormir</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="intereses" value="comer" />
+                    Comer</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="intereses" value="beber" />
+                    Beber</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="intereses" value="correr" />
+                    Correr</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- RADIO -->
+            <div class="campo">
+              <label>Sexo</label>
+              <ul class="lista-radio">
+                <li>
+                  <label
+                    ><input type="radio" name="sexo" value="masculino" />
+                    Masculino</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="radio" name="sexo" value="femenino" />
+                    Femenino</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- BOTÓN -->
+            <button type="submit">Enviar postulación</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTÁCTANOS -->
+    <section class="seccion-contacto">
+      <div class="contenedor contenedor-contacto">
+        <div class="contacto-texto">
+          <h2>Contáctanos</h2>
+          <p>
+            Si tienes dudas, deseas una asesoría o necesitas una cotización,
+            completa el formulario y te responderemos pronto.
+          </p>
+          <ul class="lista-contacto">
+            <li>Av. Ejemplo 123, Lima</li>
+            <li>+51 999 999 999</li>
+            <li>contacto@sistemcont.pe</li>
+          </ul>
+        </div>
+
+        <form class="contacto-form">
+          <label>Nombre</label>
+          <input type="text" placeholder="ingresa tu nombre" />
+          <label>Correo</label>
+          <input type="email" placeholder="tucorreo@ejemplo.com" />
+          <label>Mensaje</label>
+          <textarea rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+  <!-- PIE DE PAGINA -->
+
+  <section id="footer">
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo y nombre de sitio -->
+        <div class="footer-brand">
+          <img src="Img/2.png" alt="Logo" class="footer-logo" />
+          <p>SISTEMCONT</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <!-- Enlaces legales -->
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="Docs/obtenerDocumento.pdf">Normas Legales</a>
+
+          <a href="/Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <!-- Dentro de href llama a un documento pdf con la poltica-->
+          <a href="#">Términos y Condiciones</a>
+          <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+          <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+        </div>
+
+        <!-- Redes sociales con íconos personalizados -->
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+      <script src="menu_toggle.js"></script>
+    </footer>
+  </section>
+</html>
